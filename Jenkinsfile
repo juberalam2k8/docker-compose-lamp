@@ -9,8 +9,8 @@ node{
        git fetch --all
        git checkout 7.3.x
        cp sample.env .env
-       bat "docker-composer build"
-       bat "docker-compose up -d"
+       app = docker-composer.build("juberalam2k8/docker-compose-lamp")
+       
        
      }
 
