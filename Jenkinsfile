@@ -6,6 +6,11 @@ node{
      stage('Compile and Package'){
        def JAVA_HOME = tool name: 'jdk-11.0.4', type: 'jdk'
        app = docker.build("juberalam2k8/docker-compose-lamp")
+       cd docker-compose-lamp/
+       git fetch --all
+       git checkout 7.3.x
+       cp sample.env .env
+       docker-compose up -d
      }
 
 }
