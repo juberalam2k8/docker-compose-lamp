@@ -10,7 +10,7 @@ node{
        git fetch --all
        git checkout 7.3.x
        cp sample.env .env
-       docker-compose up -d
+       
      }
 
 }
