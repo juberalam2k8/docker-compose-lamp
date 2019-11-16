@@ -9,7 +9,7 @@ node{
        git fetch --all
        git checkout 7.3.x
        cp sample.env .env
-       app = docker-compose.build("juberalam2k8/docker-compose-lamp")
+       app = docker.build("juberalam2k8/docker-compose-lamp")
        
      }
 
